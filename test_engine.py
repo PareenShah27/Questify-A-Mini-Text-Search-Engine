@@ -13,11 +13,11 @@ sys.path.append(str(Path(__file__).parent))
 try:
     from main.main import QuestifySearchEngine
 
-    print("🔍 Testing Questify Search Engine...")
+    print("Testing Questify Search Engine...")
 
     # Initialize engine
     engine = QuestifySearchEngine()
-    print("✅ Engine initialized successfully")
+    print("Engine initialized successfully")
 
     # Add test documents
     test_docs = {
@@ -28,13 +28,13 @@ try:
 
     engine.add_documents(test_docs)
     engine.build_index()
-    print(f"✅ Added {len(test_docs)} documents and built index")
+    print(f"Added {len(test_docs)} documents and built index")
 
     # Test search
     query = "machine learning"
     results = engine.search(query)
 
-    print(f"✅ Search for '{query}' returned {results['total_results']} results")
+    print(f"Search for '{query}' returned {results['total_results']} results")
 
     # Display results
     if results['total_results'] > 0:
@@ -43,7 +43,7 @@ try:
 
     # Get statistics
     stats = engine.get_statistics()
-    print(f"✅ Engine statistics:")
+    print(f"Engine statistics:")
     print(f"   - Total documents: {stats['indexer_stats']['total_documents']}")
     print(f"   - Vocabulary size: {stats['indexer_stats']['vocabulary_size']}")
     print(f"   - Average search time: {stats['search_stats']['average_search_time']:.6f}s")
@@ -53,8 +53,8 @@ try:
     print("   streamlit run ui/streamlit_app.py")
 
 except ImportError as e:
-    print(f"❌ Import error: {e}")
+    print(f"Import error: {e}")
     print("Make sure you're in the questify directory and have installed requirements.")
 except Exception as e:
-    print(f"❌ Error: {e}")
+    print(f"Error: {e}")
     print("Something went wrong during testing.")

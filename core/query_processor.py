@@ -37,7 +37,7 @@ class QueryProcessor:
         cleaned_query = self._clean_query(raw_query)
         
         # Preprocess using text preprocessor
-        query_terms = self.preprocessor.preprocess_query(cleaned_query)
+        query_terms = self.preprocessor.preprocess(cleaned_query)
         
         return query_terms
     

@@ -71,7 +71,3 @@ class TextPreprocessor:
             filtered_tokens.append(token)
         
         return filtered_tokens
-    
-    def preprocess_query(self, query: str) -> List[str]:
-        """Preprocess search query using same logic as documents."""
-        return self.preprocess(query)
