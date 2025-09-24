@@ -5,7 +5,7 @@ Handles user input parsing, validation, and query preprocessing.
 
 import re
 from typing import List, Optional
-from ..utils.text_preprocessor import TextPreprocessor
+from utils.text_preprocessor import TextPreprocessor
 
 
 class QueryProcessor:
