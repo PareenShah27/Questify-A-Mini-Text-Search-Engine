@@ -7,13 +7,13 @@ import time
 from typing import Dict, List, Optional, Any
 from pathlib import Path
 
-from ..core.indexer import TFIDFIndexer
-from ..core.similarity import CosineSimilarityCalculator
-from ..core.query_processor import QueryProcessor
-from ..core.ranker import ResultRanker
-from ..utils.text_preprocessor import TextPreprocessor
-from ..storage.document_store import DocumentStore
-from .config import config
+from core.indexer import TFIDFIndexer
+from core.similarity import CosineSimilarityCalculator
+from core.query_processor import QueryProcessor
+from core.ranker import ResultRanker
+from utils.text_preprocessor import TextPreprocessor
+from storage.document_store import DocumentStore
+from main.config import config
 
 
 class QuestifySearchEngine:

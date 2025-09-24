@@ -6,7 +6,7 @@ Implements TF-IDF vectorization and inverted index construction.
 import math
 from collections import defaultdict, Counter
 from typing import Dict, List, Set, Tuple
-from ..utils.text_preprocessor import TextPreprocessor
+from utils.text_preprocessor import TextPreprocessor
 
 
 class TFIDFIndexer:
