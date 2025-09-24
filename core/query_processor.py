@@ -51,12 +51,9 @@ class QueryProcessor:
         Returns:
             Cleaned query string
         """
-        # Remove excessive whitespace
-        cleaned = re.sub(r'\\s+', ' ', query.strip())
-        
         # Remove any potentially harmful characters (basic sanitization)
         # Keep alphanumeric, spaces, and basic punctuation
-        cleaned = re.sub(r'[^a-zA-Z0-9\\s\\-_.,!?]', '', cleaned)
+        cleaned = re.sub(r'[^a-zA-Z0-9\\s\\-_.,!?]', ' ', query)
         
         return cleaned
     
