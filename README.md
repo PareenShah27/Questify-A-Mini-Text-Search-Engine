@@ -63,23 +63,6 @@ questify/
 - Adjust preprocessing, search, and UI parameters
 - Changes take effect after restarting the application
 
-## Docker Deployment (Optional)
-
-To containerize the application:
-
-```dockerfile
-FROM python:3.9-slim
-
-WORKDIR /app
-COPY . .
-
-RUN pip install -r requirements.txt
-
-EXPOSE 8501
-
-CMD ["streamlit", "run", "ui/streamlit_app.py", "--server.port=8501", "--server.address=0.0.0.0"]
-```
-
 ## Development
 
 The codebase is modular and extensible:
@@ -94,5 +77,3 @@ The codebase is modular and extensible:
 - **Search Time:** < 0.001s average
 - **Memory Usage:** Optimized sparse vectors
 - **Vocabulary Efficiency:** < 0.2x document count
-
-Built with ❤️ for high-performance information retrieval.
