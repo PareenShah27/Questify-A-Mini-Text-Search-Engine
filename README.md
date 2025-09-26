@@ -10,7 +10,7 @@
 2. **Run the application:**
    ```bash
    cd questify
-   streamlit run ui/streamlit_app.py
+   streamlit run streamlit_app.py
    ```
 
 3. **Open your browser and navigate to the URL shown in the terminal (usually http://localhost:8501)**
@@ -28,13 +28,12 @@ questify/
 │   └── text_preprocessor.py # Text preprocessing and tokenization
 ├── storage/           # Data management
 │   └── document_store.py    # Document storage and retrieval
-├── ui/                # User interface
-│   └── streamlit_app.py     # Streamlit web interface
 ├── files/             # Application files
 │   ├── main.py            # Main search engine class
 │   └── config.py          # Configuration management
 ├── documents/         # Document storage folder (created automatically)
-└── requirements.txt   # Python dependencies
+├── requirements.txt   # Python dependencies
+└── streamlit_app.py   # Streamlit web interface
 ```
 
 ## Features
@@ -69,7 +68,7 @@ The codebase is modular and extensible:
 - Add custom text preprocessors in `utils/`
 - Implement alternative similarity measures in `core/similarity.py`
 - Extend storage backends in `storage/`
-- Customize UI components in `ui/streamlit_app.py`
+- Customize UI components in `streamlit_app.py`
 
 ## Performance Benchmarks
 
