@@ -26,7 +26,7 @@ questify/
 │   └── ranker.py          # Result ranking and formatting
 ├── utils/             # Utility components
 │   └── text_preprocessor.py # Text preprocessing and tokenization
-├── storage/           # Data management
+├── data_manager/           # Data management
 │   └── document_store.py    # Document storage and retrieval
 ├── files/             # Application files
 │   ├── main.py            # Main search engine class
