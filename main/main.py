@@ -12,7 +12,7 @@ from core.similarity import CosineSimilarityCalculator
 from core.query_processor import QueryProcessor
 from core.ranker import ResultRanker
 from utils.text_preprocessor import TextPreprocessor
-from storage.document_store import DocumentStore
+from data_manager.document_store import DocumentStore
 from main.config import config
 
 
